@@ -1,2 +1,2 @@
-s=str(input())
-print("Hello " + s + "!")
+s = str(input())
+print("Helklo " + s + "!")
