@@ -1,12 +1,14 @@
-t = int(input())
-
-def solve(n):
-    for i in n:
-        if i != '4' and i != '7':
+def solve(s):
+    for i in range(len(s)):
+        if s[i] != "4" and s[i] != "7":
             return "NO"
     return "YES"
 
-while t > 0:
-    n = input()
-    print(solve(n))
-    t -= 1
+
+if __name__ == "__main__":
+    t = int(input())
+    while t != 0:
+        s = input()
+        print(solve(s))
+        t -= 1
+

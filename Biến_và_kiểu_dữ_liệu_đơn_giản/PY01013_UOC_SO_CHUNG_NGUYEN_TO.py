@@ -1,7 +1,7 @@
 from math import *
 
 
-def prime(n):
+def nt(n):
     if n < 2:
         return False
     for i in range(2, isqrt(n) + 1):
@@ -10,22 +10,19 @@ def prime(n):
     return True
 
 
-def gcd(a, b):
-    if b == 0:
-        return a
-    else:
-        return gcd(b, a % b)
+def sumDigit(n):
+    sum = 0
+    while n != 0:
+        sum += n % 10
+        n //= 10
+    return nt(sum)
 
 
 if __name__ == "__main__":
     t = int(input())
     while t != 0:
-        n = int(input())
-        cnt = 0
-        for i in range(n):
-            if gcd(i, n) == 1:
-                cnt += 1
-        if prime(cnt):
+        a, b = map(int, input().split())
+        if sumDigit(gcd(a, b)):
             print("YES")
         else:
             print("NO")
