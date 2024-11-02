@@ -10,19 +10,21 @@ def prime(n):
     return True
 
 
+def check(s):
+    for i in range(0, len(s)):
+        check1 = prime(i)
+        check2 = prime(int(s[i]))
+        if check1 != check2:
+            return False
+    return True
+
+
 if __name__ == "__main__":
     t = int(input())
     while t > 0:
         t -= 1
         s = input()
-        ngto = 0
-        noNgto = 0
-        for i in range(len(s)):
-            if s[i] in ["2", "3", "5", "7"]:
-                ngto += 1
-            else:
-                noNgto += 1
-        if prime(len(s)) and ngto > noNgto:
+        if check(s):
             print("YES")
         else:
             print("NO")

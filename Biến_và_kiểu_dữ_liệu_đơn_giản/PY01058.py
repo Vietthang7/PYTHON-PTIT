@@ -15,14 +15,8 @@ if __name__ == "__main__":
     while t > 0:
         t -= 1
         s = input()
-        ngto = 0
-        noNgto = 0
-        for i in range(len(s)):
-            if s[i] in ["2", "3", "5", "7"]:
-                ngto += 1
-            else:
-                noNgto += 1
-        if prime(len(s)) and ngto > noNgto:
+        k = int(s[-4::])
+        if prime(k):
             print("YES")
         else:
             print("NO")
