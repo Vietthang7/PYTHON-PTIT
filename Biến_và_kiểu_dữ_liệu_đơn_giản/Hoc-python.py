@@ -279,14 +279,14 @@ from math import *
 
 
 # a[start:stop:step]
-# a = [10, 20, 30, 40, 50, 60]
-# # b = a[2:5:2]
+a = [10, 20, 30, 40, 50, 60]
+# b = a[2:5:2]
 # # không truyền step thì mặc định là 1
 # # không truyền stop thì mặc định là chỉ số cuối cùng
 # # không truyền start thì mặc định là chỉ số 0
-# # b = a[2:5]
-# # b = a[2:-2]
-# print(b)
+# b = a[2:5]
+b = a[2:-2]
+print(b)
 
 
 # Lật ngược list
