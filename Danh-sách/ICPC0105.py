@@ -12,5 +12,5 @@ if __name__ == "__main__":
             else:
                 if res != "":
                     ans.append(int(res))
-                res = ""
-        print(min(ans))
+                    res = ""
+        print(max(ans))
