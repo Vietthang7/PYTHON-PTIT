@@ -1,5 +1,15 @@
-Nguyen Hoang Ha
-11/10/2001
-4.5
-10.0
-5.5
+2 3
+Hai huoc
+Tinh cam
+TL001
+25/11/2021
+Phim so 1
+10
+TL001
+04/12/2021
+Phim so 2
+15
+TL002
+25/11/2021
+Phim so 3
+5
